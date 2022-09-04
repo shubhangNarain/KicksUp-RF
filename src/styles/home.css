@@ -1,0 +1,104 @@
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+.navbar-div {
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 15;
+}
+
+.app-navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    background-color: var(--white);
+    padding-top: 1.5rem;
+}
+
+.nav-pages {
+    display: flex;
+    list-style: none;
+    width: 40vw;
+    justify-content: center;
+}
+
+.nav-pages li {
+    flex-basis: 20%;
+}
+
+.page-link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.web-logo-img {
+    height: 45px;
+    width: 45px;
+}
+
+.login-div {
+    display: flex;
+    align-items: center;
+}
+
+.person-logo {
+    height: 30px;
+    width: 30px;
+}
+
+/* RATINGS */
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+
+.full-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fde16d;
+}
+
+.empty-stars:before,
+.full-stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 14pt;
+}
+
+.empty-stars:before {
+    -webkit-text-stroke: 1px #848484;
+}
+
+.full-stars:before {
+    -webkit-text-stroke: 1px orange;
+}
+
+/* Webkit-text-stroke is not supported on firefox or IE */
+
+/* Firefox */
+@-moz-document url-prefix() {
+    .full-stars {
+        color: #ECBE24;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .nav-pages {
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .nav-pages {
+        width: 65vw;
+    }
+}

@@ -1,0 +1,148 @@
+.store-div-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.cursor {
+    cursor: pointer;
+}
+/* FILTERS */
+.filter-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.apply-btn {
+    margin-left: 37%;
+    margin-top: 3rem;
+}
+
+/* CARD */
+.product-box {
+    padding: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    flex-basis: 46%;
+}
+
+.product-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-functions {
+    display: flex;
+}
+
+.product-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.sort-btn {
+    background: none;
+    padding: 0 0.5rem;
+}
+
+.products-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    row-gap: 2rem;
+}
+
+.product-card {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.product-img {
+    height: 12rem;
+    background-color: gray;
+}
+
+.filter-heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cost-input {
+    margin-right: 1rem;
+}
+
+.filter-box, .cart-box {
+    flex-basis: 22%;
+}
+
+.cart-div {
+    padding: 0 0.5rem;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.product-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0.3rem;
+}
+
+.sort-div {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: -1rem;
+    border: solid 1px gray;
+    padding: 0.1rem 0.5rem 0.3rem 0;
+    width: 9rem;
+}
+
+.close-sort {
+    margin-left: 8rem;
+    margin-bottom: -0.3rem;
+}
+
+.search-input {
+    padding: 0.5rem;
+    margin-left: -6rem;
+    outline: gray;
+}
+
+.close-btn {
+    margin-left: -1.2rem;
+}
+
+.color-container {
+    margin-left: -5rem;
+}
+
+@media screen and (max-width: 1360px) {
+    .color-container {
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .sort-div {
+        font-size: 0.8rem;
+        width: 7.3rem;
+        padding-right: 0rem;
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .close-sort {
+        margin-left: 6.5rem;
+    }
+
+    .search-icon {
+        margin-right: 0rem;
+    }
+}

@@ -1,0 +1,248 @@
+@import url(./home.css);
+.design-space {
+    flex-basis: 70%;
+    padding-left: 3rem;
+}
+
+.less-icon {
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.single-product-heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0 2rem 0;
+}
+
+.single-product-heading span {
+    font-size: 1.6rem;
+}
+.design-flex {
+    display: flex;
+}
+
+.single-product,
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-product {
+    flex-basis: 50%;
+    align-items: flex-start;
+}
+
+.separate-prod-img {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+}
+
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-basis: 50%;
+    grid-template-rows: repeat(3, 32%);
+}
+
+.design-img {
+    width: 9rem;
+    height: 8rem;   
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin: -1rem 0;
+}
+.wrapper span {
+    width: 4rem;
+}
+.custom-column {
+    grid-row: 2/4;
+    grid-column: 2;
+    margin-left: -5rem;
+}
+.product-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: -5rem;
+}
+
+.rate-div  {
+    margin: 0.5rem 0 -1rem 2rem;
+}
+.rate-div span {
+    margin-right: 1rem;
+}
+.single-prod-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.filter-box, .cart-box, .site-products, .design-space {
+    height: 79.8vh;
+ }
+ .site-products, .design-space, .cart-box {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+ }
+ 
+ .site-products::-webkit-scrollbar, .design-space::-webkit-scrollbar, .cart-box::-webkit-scrollbar { 
+    display: none;
+}
+/* CHECKBOX */
+.container, .product-actions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .option_item {
+    margin: 1rem 0;
+}
+
+.container .option_item .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.option_item .option_inner {
+    border-radius: 5px;
+    text-align: center;
+    height: 32px;
+    width: 35px;
+    cursor: pointer;
+    color: #585c68;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+}
+
+
+.small-img {
+    height: 35px !important;
+    width: 35px !important;
+    border: solid 1px var(--black);
+}
+
+.option_item .option_inner .tickmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid;
+    border-color: transparent;
+    display: none;
+}
+
+.option_item .option_inner .tickmark:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 15px;
+    height: 5px;
+    border: 3px solid;
+    border-color: transparent transparent var(--black) var(--black);
+    transform: rotate(-45deg);
+}
+
+.option_item .checkbox:checked~.option_inner .tickmark {
+    display: block;
+    z-index: 10;
+}
+.option_item .checkbox:checked~.option_inner img {
+    opacity: 0.7;
+}
+@media screen and (max-width: 1360px) {
+    .custom-column, .product-info {
+        margin-left: -1rem;
+     }
+    .option_inner .small-img {
+       width: 22px !important;
+       height: 22px !important;
+    }
+    .option_item .option_inner .tickmark {
+        top: -0.5rem;
+        left: -0.5rem;
+    }
+    .product-info.cart-info {
+        margin-left: 0.5rem;
+    }
+    .container {
+        margin-left: -1rem;
+    }
+    .site-products {
+        flex-basis: 44%;
+     }
+     
+    .design-space {
+        flex-basis: 67%;
+    }
+    .cart-box .product-img {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+@media screen and (max-width: 1100px){
+    .custom-column, .product-info {
+        margin-left: -1.5rem;
+     }
+     .design-img {
+       width: 8rem;
+       margin-bottom: 1rem;
+     }
+     .separate-prod-img {
+        height: 85%;
+        width: 95%;
+     }
+}
+@media screen and (max-width: 1000px) {
+    .color-container {
+        margin-left: 0;
+    }
+    .color-container img {
+        height: 20px;
+        width: 20px;
+    }
+    .apply-btn {
+        margin-top: 0;
+    }
+    .filter-box {
+        position: fixed;
+        width: 12rem;
+    }
+    .site-products {
+        margin-left: 15rem;
+        margin-right: 35%;
+    }
+    .design-space {
+        flex-basis: 56%;
+    }
+    .design-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart-box {
+        position: fixed;
+        right: 1.2rem;
+        width: 28%;
+    }
+    .design-grid {
+        margin-top: 1rem;
+    }
+    .separate-prod-img {
+        width: 90%;
+        height: 70%;
+    }
+    .product-info,  .custom-column {
+        margin-left: -1rem; 
+    }   
+}
