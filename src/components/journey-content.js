@@ -3,7 +3,7 @@ export const JourneyContent = () => {
         <div>
             <div>
                 <img src="../assets/grasspic.jpg"
-                    className="grass-img" />
+                    className="grass-img" alt="#"/>
                 <span className="journey-span">THE JOURNEY</span>
             </div>
             <div className="text-box">
